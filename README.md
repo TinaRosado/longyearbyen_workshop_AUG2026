@@ -1,199 +1,222 @@
-# Svalbardposten's Weather Map
-## A First Concept Development
+# Exploring Longyearbyen Through the *Svalbardposten* Archive
 
-<br/>
+**Community workshop visualization · Artica Svalbard · Longyearbyen · August 2026**
 
-### Quick links to sections of the README file
+This repository contains the version of the *Svalbardposten* discourse map developed for **Exploring Longyearbyen Through the Svalbardposten Archive**, a public talk and participatory workshop held at [Artica Svalbard](https://www.articasvalbard.no/2026/workshop-talk-exploring-longyearbyen-through-the-svalbardposten-archive) on August 26, 2026.
 
-[Introduction](#Introduction)
+The project uses computational text analysis and information design to explore more than 16,700 articles published by *Svalbardposten* between 2006 and 2024. Rather than treating the resulting visualization as a definitive representation of the newspaper archive—or of Longyearbyen itself—the workshop used the map as an object of inquiry: something participants could explore, question, annotate, and redraw through their own knowledge of the community.
 
-[Data](#Data)
+> **How does a computational reading of an archive change when the people represented within it are invited to read the map themselves?**
 
-[Methodology](#Methodology)
+---
 
-[Contribution & Future Work](#Contribution_&_Future_Work)
+## Quick Links
 
-<br/>
-<br/>
-<br/>
+[Project Evolution](#project-evolution) · [Artica Workshop](#the-artica-workshop) · [Workshop Process](#workshop-process) · [What Emerged](#what-emerged) · [Computational + Community Reading](#computational-reading--community-reading) · [About the Data](#about-the-data) · [Research Context](#research-context) · [Repository Lineage](#repository-lineage) · [References](#selected-references) · [Acknowledgments](#acknowledgments)
 
-## Introduction
+---
 
-<br/>
+## Project Evolution
 
+This repository represents the third stage in an evolving research and design process.
 
-### Navigating Media Discourse through Network Maps
+### 01 — Thesis: *An Atlas of Discourse*
 
-This project is a component of a broader Master of Fine Arts thesis in Information Design and Data Visualization at Northeastern University. The thesis employs a Cultural Analytics approach to examine the visualization challenges of large digital archives, using Svalbardposten’s digital news archive as a case study. It explores and compares two distinct computational approaches and visualization techniques, analyzing their outcomes through the lens of Cultural Analytics principles. The results of the computational approaches and the visualizations of the study are intended as a conceptualization experiment and are not the intended final outcomes.
+[**dataviz_svalbardposten_weathermap**](https://github.com/TinaRosado/dataviz_svalbardposten_weathermap)
 
-It is important to note that the scope of this thesis—and by extension, this project—is exploratory in nature. Its primary aim is to ideate and prototype possible interactive interfaces that facilitate access to large digital archives. As such, the analytical and visualization processes presented here should be understood as preliminary and experimental. They are not intended to represent a final or comprehensive analysis but rather to serve as a foundation for future iterations, encouraging continued refinement, expansion, and exploration through computational methods. 
+The project originated in Tina Rosado's 2025 MFA thesis in Information Design and Data Visualization at Northeastern University, *An Atlas of Discourse: Mapping Large Digital Archives through Expansive Interface Design*.
 
-The goal of this repository is to document methodologies used to visualize the newspaper archive through the implementation of [Rodighiero and Daniélou’s Weather Map (2023)](https://pure.rug.nl/ws/portalfiles/portal/856541881/10.1515_9783111317779-017.pdf) and making them openly accessible. This ensures that the computational analysis underpinning the visualization is transparent and reproducible, allowing other researchers to explore, adapt, and build upon this work.
+The thesis investigated how computational methods and information visualization could support exploration of large digital archives while maintaining interpretive openness. *Svalbardposten*'s digital archive served as the primary case study.
 
+One of the resulting interfaces adapted Dario Rodighiero and Jean Daniélou's **Weather Map** model to visualize relationships among actors appearing in the newspaper archive.
 
-<br/>
+**Thesis:**  
+Rosado, T. L. (2025). *An atlas of discourse: Mapping large digital archives through expansive interface design* [Master's thesis, Northeastern University].  
+https://doi.org/10.17760/D20741600
 
-### Audience
+---
 
-This project is intended for students and practitioners in the Digital Humanities, Information Design, and Data Science that are interested in mapping large collections of text based documents through a web-based interactive interface. 
+### 02 — Workshop Development
 
-<br/>
+[**rodighiero/svalbard-workshop**](https://github.com/rodighiero/svalbard-workshop)
 
-### Repository Structure
+In preparation for bringing the project to Longyearbyen, Dario Rodighiero developed a new iteration of the computational and visual approach.
 
-This repository contains all the code and files necessary for running the data analysis and deploying the interactive interface. It is organized into three main folders, each serving a distinct role in the workflow:
+This stage expanded the original thesis prototype and provided the basis for redesigning the visualization around a different purpose: not only navigating the archive, but using the map in conversation with people who know Longyearbyen and its histories.
 
-| Folder     | Description                                                                                                                                                                                                 |
-|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data`     | **Computational Analysis**: Contains the Jupyter Notebook for NLP-based computational analysis, with step-by-step code, descriptive annotations, and graphical visualizations. It also generates the CSV file used as input for the web interface. |
-| `docs`     | **Production-Ready JavaScript for Web Deployment**: Contains production-ready JavaScript files for the web application, generated using Webpack, which compiles and optimizes the code (JavaScript, CSS, and other assets) for browser deployment. |
-| `src`      | **Files to Build Interface**: Contains the application's source code, including JavaScript modules, CSS assets, and the CSV file generated during data analysis. These files define the structure, interactivity, and presentation of the web interface. |
+---
 
-#### Visualization URL
+### 03 — Longyearbyen Workshop Interface
 
-You can view the interactive visualization at the following link:  
-[Interactive Visualization](https://tinarosado.github.io/dataviz_svalbardposten_weathermap/)
+**This repository:** [longyearbyen_workshop_AUG2026](https://github.com/TinaRosado/longyearbyen_workshop_AUG2026)
 
+The interface was further redesigned for the August 2026 workshop at Artica Svalbard.
 
-<br/>
-<br/>
-<br/>
+The visualization introduced new ways of reading the archive at multiple scales, including discourse regions, clusters, individual articles, temporal views, and alternative representations of the underlying computational structure.
 
-## DATA
+The central shift, however, was methodological: **the computational map became the beginning of interpretation rather than its conclusion.**
 
-This research marks the first computational exploration of Svalbardposten's digital archive, a significant resource for understanding local journalism in one of the world's northernmost permanently inhabited regions. Svalbardposten, established in 1948, started as a community paper to broadcast information about the coal mining activities and relevant notifications. Currently it serves as the primary news source for Svalbard's international community, with coverage focusing on community activities, cultural and historical news, local politics, environmental issues, tourism, scientific research, and the region's unique regulatory framework under the Svalbard Treaty.
+Participants were invited to compare the relationships generated through computational analysis with their own knowledge of Longyearbyen.
 
-This study presents the first computational exploration of the Svalbardposten digital archive, comprising 16,786 articles with associated metadata spanning from 2006 to 2024. Svalbardposten provided URL access to their RSS feed and a list of unique IDs in Excel format for research purposes. Data was collected programmatically through the HTTPS protocol using Python code to access the newspaper's RSS feed and retrieve articles via their unique IDs. While metadata and analytical results are presented in this research, the full article texts remain proprietary and are not publicly distributed.
+---
 
-#### Table 1: Data Sample of *Svalbardposten*’s Digital Archive
+## The Artica Workshop
 
-| Column Header             | Sample                                                                                                                                  |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `bodytext`                | I starten av onsdagens lokalstyremøte stilte Gytri spørsmål til administrasjonen på vegne av listesamarbeidet Venstre/Høyre. Det er en oppfølging fra fjorårets budsjettmøte… |
-| `contentMarketingPublisher` | type                                                                                                                                |
-| `created`                 | 2024-09-20T10:08:40+02:00                                                                                                               |
-| `created_by_name`         | Kristiansen, Martin                                                                                                                    |
-| `id`                      | 545658                                                                                                                                  |
-| `published`               | 2024-09-20T12:17:59+02:00                                                                                                               |
-| `published_url`           | /stiller-sporsmal-om-kommunokonomien/545658                                                                                            |
-| `subtitle`                | – Longyearbyen lokalstyre må gjøre en grundig vurdering av hva det brukes penger på, og vi er opptatt av en bred gjennomgang for å få en god oversikt. Det understreker Jo Gytri i Svalbard Høyre. |
-| `summary_shot_title`      | N/A                                                                                                                                     |
-| `tags`                    | nyheter, lokalstyret, idrett, kultur                                                                                                    |
-| `title`                   | Stiller spørsmål om kommunøkonomien                                                                                                     |
-| `type`                    | article                                                                                                                                 |
+**Exploring Longyearbyen Through the Svalbardposten Archive**  
+Artica Svalbard, Longyearbyen  
+August 26, 2026
 
-<br/>
-<br/>
-<br/>
+[View the event at Artica Svalbard](https://www.articasvalbard.no/2026/workshop-talk-exploring-longyearbyen-through-the-svalbardposten-archive)
 
-## Methodology
-<br/>
+The workshop brought the visualization back to the community represented within the archive. Residents and visitors explored the map alongside the research team and were asked to identify recognizable patterns, unexpected relationships, questionable groupings, missing perspectives, and tensions between the computational representation and their experience of Longyearbyen.
 
-### Implementation: Actor-Network Analysis (Weather Map)
+The aim was not simply to test whether the map was "correct." Instead, the workshop examined what different forms of reading could contribute to one another:
 
-Code adapted from [Rodighiero’s GitHub repository](https://github.com/rodighiero/weather-map)
+**What can computational analysis make visible across thousands of articles?**
 
-This analysis adapts **Rodighiero and Daniélou's Weather Map** (Rodighiero and Daniélou 2023) to examine the evolution of actors and discourse in *Svalbardposten*'s reporting. The Weather Map was conceived as a tool to examine public debate and is inspired by **Bruno Latour's Actor-Network Theory**. It is an innovative approach to mapping public discourse using **weather patterns as a time-based metaphor**, with documents clustered based on the prominence of key actors and trends in newspaper mentions over time.
+**What can local knowledge recognize that computational analysis cannot?**
 
-The analysis and visualization process of this project follows five main steps:
+---
 
+## Workshop Process
 
-<br/>
+The workshop moved through three stages: **exploration, inquiry, and reinterpretation.**
 
-#### **STEP 1 – Entity Extraction**
+### 1. Exploration
 
-Entity extraction is performed by identifying syntactic elements within the text using Parts of Speech (POS) and identifying semantic categories using Named Entity Recognition (NER). Both processes are implemented using the SpaCy and the model 'nb_core_news_sm'. This computational linguistics approach enables the systematic identification of relevant subjects within the articles, including nouns, proper nouns, and organizations that function as actors within the discourse network. For the purposes of this analysis, actors are defined as subjects within the discourse therefore verbs, adjectives symbols and numbers were not extracted in this step. The extraction process includes tokenization and lemmatization and preserves the original Norwegian language terms to maintain semantic fidelity throughout the analysis.
+Participants first encountered a simplified black-and-white version of the map showing discourse regions, contours, and cluster labels.
 
+They were invited to read the map spatially, identify subjects they recognized, and mark areas that interested them or connected with their experience of Longyearbyen.
 
-<br/>
+### 2. Inquiry
 
-#### **STEP 2 – Network Construction and Clustering**
+Participants then worked with a more detailed printed map and the interactive visualization.
 
-Once entities are extracted, they are clustered based on frequency and co-occurrence utilizing Term Frequency-Inverse Document Frequency (TF-IDF)(Spärck Jones 1972) vectorization. Following vectorization of the entities, Uniform Manifold Approximation and Projection (UMAP)(McInnes, Healy, and Melville 2018) is applied for dimensionality reduction, which projects the high-dimensional relationship data onto a two-dimensional Cartesian space while preserving the topological structure of the data. With the data projected in two dimensions, clustering is performed using Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN). This density-based clustering algorithm groups entities that frequently appear together in the corpus, enabling the identification of key thematic clusters within the discourse based on actors' close relationships. It is important to note that this approach does not necessarily assign every document to a meaningful cluster; a subset of outliers with unassigned clusters are grouped into a single cluster (cluster -1) despite lacking substantive semantic commonality amongst them. 
+Using annotations and post-it notes, they identified:
 
+- recognizable patterns;
+- unexpected connections;
+- potentially misleading groupings;
+- missing perspectives;
+- relationships they believed should be stronger or weaker;
+- tensions between local experience and the narrative represented by the newspaper archive.
 
-<br/>
+Participants could move between the complete map, discourse regions, clusters, and individual articles to investigate particular areas in greater depth.
 
-#### **STEP 3 – Temporal Analysis Integration**
+### 3. Reinterpreting the Map
 
-To capture the temporal evolution of the discourse, the analysis incorporates a diachronic dimension by color mapping time across the archive’s years. A color temperature gradient is implemented as a visual encoding strategy, where cooler hues (blue spectrum) are mapped to earlier temporal periods, using the earliest year as one end of the spectrum, and warmer hues (red spectrum) denote more recent occurrences, using the final year as the other end of the spectrum. In addition the time frame is divided in two, and used as a reference later in the visualization to denote major areas of past and recent discourse. The integration of this temporal dimension enables the investigation of research questions concerning the evolving significance of specific topics and actors.
+Finally, participants were invited to physically redraw the computational map.
 
+They could:
 
-<br/>
+- draw new boundaries;
+- connect areas separated by the algorithm;
+- divide existing discourse regions;
+- rename or question cluster labels;
+- reposition relationships;
+- add missing subjects or perspectives.
 
-#### **STEP 4 – Prompt-Engineering Topic Labeling**
+The resulting annotations created a second interpretive layer over the computational map: **a community reading of the archive.**
 
-The Svalbardposten adaptation of the Weather Map has an additional step to systematically interpret and label topics for each cluster identified in the previous step. Using OpenAI APIs, the labeling process employs a large language model (GPT-4). Giving the model an assigned role as a domain expert in text analysis, in Norwegian language and Svalbard contexts. The process involves:
+---
 
+## What Emerged
 
-1. **Top keywords** from each cluster (based on POS and NER data) are extracted.
-2. A structured prompt is crafted with:
-   - Requests for **2–3 word English labels**
-   - Instructions to avoid generic or redundant terms
-   - Emphasis on **Svalbard-specific domain knowledge**
-   - Translation from Norwegian to English
-3. **Manual verification** ensures semantic and contextual accuracy.
+The workshop exposed productive differences between computational proximity and community interpretation.
 
-This **human-in-the-loop** approach ensures meaningful, reliable cluster labels.
+One recurring discussion concerned **centrality**. The computational map positioned the Governor (*Sysselmesteren*) prominently near the center of the network, reflecting the institution's connections across many areas of newspaper discourse. Participants questioned whether institutional prominence in the newspaper should be interpreted as centrality within community life.
 
+Conversely, opinion and community commentary appeared toward the margins of the computational map. Participants suggested that these conversations could be understood as considerably more central to how the community discusses and negotiates local issues.
 
-<br/>
+Participants also recognized relationships between clusters that appeared computationally distant, questioned the separation of related wildlife topics, identified highly specific historical phenomena such as business-support discussions associated with the COVID-19 period, and reflected on how the archive preserves memories in a place characterized by a highly mobile population.
 
-#### **STEP 5 – Interactive Interface Visualization**
+These observations point toward an important distinction:
 
-The design of the final JavaScript visualization was adopted from code provided by Rodighiero and lightly adapted to adjust the legend and a few visual elements for readability. The visualization displays entity clusters and their relationships through an interactive web-based interface with specific visual affordances and navigation capabilities:
+**A map of what is structurally central in a newspaper archive is not necessarily a map of what a community considers central to itself.**
 
-- **Zooming functionality** for distant/close reading of the discourse
-- **Color overlays**:
-  - Overlapping red/blue clusters highlight enduring themes
-- **Isoline boundaries** to differentiate clusters
-- **English translations** of topic labels and key metadata
-- **Direct links** to original *Svalbardposten* articles
+Rather than treating this discrepancy as an error to eliminate, the project considers the tension between these readings as a source of knowledge.
 
-The *Svalbardposten* Weather Map offers structured, interactive access to the archive, enabling exploration of **how Longyearbyen’s news media discourse has evolved** over time and which themes have remained central.
+---
 
-<br/>
-<br/>
-<br/>
+## Computational Reading + Community Reading
 
-## Contribution & Future Work
+The workshop suggests a model in which computational and situated interpretations operate as complementary layers.
 
+```text
+Svalbardposten Archive
+        ↓
+Computational Analysis
+        ↓
+Algorithmic Map
+        ↓
+Community Reading
+        ↓
+Annotations / Connections / Corrections / Questions
+        ↓
+New Interpretation
+```
 
-This project successfully created a public-facing repository that includes both the computational analysis and an interactive visualization of *Svalbardposten*’s digital news archive (2006–2024). A core priority throughout the process was maintaining the privacy of the full article texts while ensuring transparency in the computational methodology and its outputs.
+Computational methods can reveal patterns distributed across thousands of documents that would be difficult to perceive through conventional reading alone. Local interpretation, meanwhile, can identify social relationships, historical context, linguistic differences, absences, and forms of meaning that are not encoded in textual similarity.
 
-Detailed analytical results and interface implementation are documented in the Northeastern MFA thesis *An Atlas of Discourse: Navigating Large Digital Archives through Visual Maps* (link to be available upon publication by the Northeastern Library).
+The objective is therefore not to determine which reading is authoritative, but to investigate what becomes visible **between them**.
 
-#### Methodological Contributions
+---
 
-This project makes several methodological contributions to the field of Digital Humanities:
+## About the Data
 
-- **Adaptation of the Weather Map to Journalistic Archives**  
-  This implementation demonstrates the versatility of the Weather Map visualization technique beyond its original use in controversy mapping and manuscript analysis. By adapting it to a longitudinal news archive, the project offers a scalable model for applying this method to other journalistic or cultural collections.
+The dataset comprises more than **16,700 digital articles from *Svalbardposten*, spanning 2006–2024**.
 
-- **Topic Labeling Application**  
-  The integration of prompt-engineered topic labeling adds an innovative dimension to the original Weather Map methodology. This human-in-the-loop approach combines computational clustering with the interpretive capabilities of large language models, resulting in more meaningful and accessible thematic navigation.
+*Svalbardposten*, founded in 1948, is the local newspaper of Svalbard and is based in Longyearbyen. Its archive records transformations in community life across subjects including local politics, mining, tourism, research, wildlife, environmental change, infrastructure, culture, and everyday life.
 
-- **Multilingual Considerations**  
-  The project addresses the challenges of analyzing Norwegian-language text using natural language processing (NLP) tools, documenting specific adaptations that could inform future work with non-English corpora.
+The computational analysis uses article text and metadata to identify relationships across the archive. The visualization should therefore be understood as a representation produced through a particular analytical methodology—not as a neutral or exhaustive representation of Longyearbyen.
 
-- **Reproducibility Framework**  
-  The GitHub repository, structured into three folders—`data analysis`, `source code`, and `production-ready files`—provides a transparent and reproducible framework. This modular structure supports both technical clarity and practical reuse for future projects.
+Full article texts remain proprietary and are not distributed through this repository.
 
-#### Directions for Future Research
+---
 
-Despite its contributions, this first iteration of the *Svalbardposten* Weather Map has several limitations that suggest directions for future research:
+## Research Context
 
-- **Temporal Resolution of Topic Evolution**  
-  While the visualization effectively captures broad shifts in discourse (e.g., early vs. late periods), not all articles could be confidently classified into thematic clusters, limiting the resolution of topic evolution across the full archive. Further refinement of the computational process can improve this outcome.
+The workshop forms part of an ongoing research collaboration connecting information design, digital humanities, computational analysis, and Arctic research.
 
-- **Multilingual Integration**  
-  Currently, the implementation focuses exclusively on Norwegian-language articles. Future iterations should incorporate multilingual analysis to capture the full linguistic and cultural diversity of *Svalbardposten*’s coverage.
+The work developed from Tina Rosado's MFA thesis at Northeastern University and subsequent collaboration with **Dario Rodighiero**, **Sabina Rosenbergova**, and **Maarten Loonen** through the University of Groningen and the SVALUR research context.
 
-- **User Testing and Evaluation**  
-  Formal usability testing with both scholarly and non-scholarly users would provide insight into how different audiences interact with the visualization. Such evaluation would help refine the design for broader accessibility and interpretability, as identified in Section 1.4.
+### Workshop team
 
-- **Expanded Metadata**  
-  Incorporating metadata such as article length, section placement, or associated multimedia could enrich the visualization and reveal new dimensions of the newspaper’s editorial strategies. These possibilities are explored further in the second approach presented in the thesis.
+**Tina Rosado** — Information designer and digital humanist. Project design, computational exploration, visualization, and workshop co-design/facilitation.
 
-- **Towards Exploratory Interfaces**  
-  A critical area for future exploration lies in expanding the interface to not only guide users through the archive but to engage them as active participants in the process of knowledge-creation. This shift—from passive exploration to interpretive collaboration—could transform how users interact with large-scale digital archives, opening new pathways for critical inquiry, cultural reflection, and collective memory-making.
+**Dario Rodighiero** — Assistant Professor of Science and Technology Studies, University of Groningen, Campus Fryslân. Computational methodology, visualization development, research supervision, and workshop co-design/facilitation.
+
+**Sabina Rosenbergova** — Cultural heritage researcher, University of Groningen, Campus Fryslân. Cultural heritage perspective and workshop co-design/facilitation.
+
+**Maarten Loonen** — Arctic researcher, Arctic Centre, University of Groningen. SVALUR project lead and Arctic research context.
+
+---
+
+## Repository Lineage
+
+The three repositories document different stages of the project rather than interchangeable versions of the same application.
+
+| Stage | Repository | Purpose |
+|---|---|---|
+| 2025 | [dataviz_svalbardposten_weathermap](https://github.com/TinaRosado/dataviz_svalbardposten_weathermap) | MFA thesis prototype and computational methodology |
+| 2026 | [rodighiero/svalbard-workshop](https://github.com/rodighiero/svalbard-workshop) | Methodological and visualization development for the workshop |
+| Aug. 2026 | [longyearbyen_workshop_AUG2026](https://github.com/TinaRosado/longyearbyen_workshop_AUG2026) | Interface used for the Artica Svalbard community workshop |
+
+---
+
+## Selected References
+
+Latour, B. (2021). Préface. In C. Seurat & T. Tari (Eds.), *Controverses mode d'emploi*. Presses de Sciences Po.
+
+Rodighiero, D., & Daniélou, J. (2023). Weather map: A diachronic visual model for controversy mapping. In F. Armaselu & A. Fickers (Eds.), *Zoomland: Exploring scale in digital history and humanities*. De Gruyter. https://doi.org/10.1515/9783111317779-017
+
+Rosado, T. L. (2025). *An atlas of discourse: Mapping large digital archives through expansive interface design* [Master's thesis, Northeastern University]. https://doi.org/10.17760/D20741600
+
+---
+
+## Acknowledgments
+
+This iteration of the project was made possible through collaboration with Dario Rodighiero, Sabina Rosenbergova, and Maarten Loonen, and with the support of the University of Groningen’s Campus Fryslân and Arctic Centre, the SVALUR research project, and Artica Svalbard.
+
+Special thanks to the residents and visitors who participated in the Longyearbyen workshop and contributed their interpretations, questions, annotations, and knowledge of the community.
+
