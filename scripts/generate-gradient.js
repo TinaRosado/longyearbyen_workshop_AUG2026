@@ -61,7 +61,7 @@ const TUNING = {
     minDensityFrac: 0.04,
     // Density (as a fraction of the peak) at which opacity saturates to
     // maxOpacity.
-    refDensityFrac: 0.50,
+    refDensityFrac: 0.5,
     maxOpacity: 0.85,
     // Opacity-vs-density curve exponent. <1 pushes sparse regions toward
     // maxOpacity sooner (softer overall look); >1 keeps only the densest

@@ -12,7 +12,13 @@
 
 import { contourDensity, line, curveCatmullRomClosed } from 'd3'
 import { clusterGeometry, haloRect, LABEL_HALO_RADIUS, LABEL_HALO_ALPHA } from './geometry.js'
-import { frontsGeometry, semicirclePoints, FRONT_COLOR_HEX, FRONT_LINE_WIDTH, PIP_R } from './fronts.js'
+import {
+    frontsGeometry,
+    semicirclePoints,
+    FRONT_COLOR_HEX,
+    FRONT_LINE_WIDTH,
+    PIP_R,
+} from './fronts.js'
 import { CIRCLE_FILL_OPACITY } from './pointGradient.js'
 
 const SVGNS = 'http://www.w3.org/2000/svg'
@@ -292,7 +298,9 @@ const buildSvg = (entities) => {
             }
             const text = el('text', { x: cx, 'font-size': size, fill })
             lines.forEach((ln, i) => {
-                text.appendChild(el('tspan', { x: cx, y: (t.y + size * 0.8 + i * lh).toFixed(2) }, ln))
+                text.appendChild(
+                    el('tspan', { x: cx, y: (t.y + size * 0.8 + i * lh).toFixed(2) }, ln),
+                )
             })
             svgAddBBox(bbox, t)
             g.appendChild(text)

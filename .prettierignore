@@ -9,3 +9,10 @@ environment.yml
 *.css
 *.html
 *.md
+
+# Generated analysis artifacts — preserve output formatting
+data/article_translations_leaf_ms5.json
+data/cluster_labels_gpt56sol_checkpoint.json
+data/cluster_labels_no_gpt56sol_checkpoint.json
+data/cluster_subjects_leaf_ms5.json
+data/cluster_translations_leaf_ms5.json
