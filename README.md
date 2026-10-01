@@ -8,11 +8,13 @@ The project uses computational text analysis and information design to explore m
 
 > **How does a computational reading of an archive change when the people represented within it are invited to read the map themselves?**
 
+
 ---
 
 ## Quick Links
 
 [Project Evolution](#project-evolution) · [Artica Workshop](#the-artica-workshop) · [Workshop Process](#workshop-process) · [What Emerged](#what-emerged) · [Computational + Community Reading](#computational-reading--community-reading) · [About the Data](#about-the-data) · [Research Context](#research-context) · [Repository Lineage](#repository-lineage) · [References](#selected-references) · [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -34,6 +36,7 @@ One of the resulting interfaces adapted Dario Rodighiero and Jean Daniélou's **
 Rosado, T. L. (2025). *An atlas of discourse: Mapping large digital archives through expansive interface design* [Master's thesis, Northeastern University].  
 https://doi.org/10.17760/D20741600
 
+
 ---
 
 ### 02 — Workshop Development
@@ -43,6 +46,7 @@ https://doi.org/10.17760/D20741600
 In preparation for bringing the project to Longyearbyen, a new iteration of the computational and visual approach was developed. This version was used in a pilot workshop facilitated by Dario Rodighiero and Sabina at the Free University of Bozen-Bolzano on July 6-9, 2026.
 
 This stage expanded the original thesis prototype and provided the basis for redesigning the visualization around a different purpose: not only navigating the archive, but using the map in conversation with people who know Longyearbyen and its histories.
+
 
 ---
 
@@ -73,6 +77,7 @@ The aim was not simply to test whether the map was "correct." Instead, the works
 **What can computational analysis make visible across thousands of articles?**
 
 **What can local knowledge recognize that computational analysis cannot?**
+
 
 ---
 
@@ -148,6 +153,7 @@ These observations point toward an important distinction:
 
 Rather than treating this discrepancy as an error to eliminate, the project considers the tension between these readings as a source of knowledge. *Svalbardposten* provides an ongoing journalistic record of public discourse in Longyearbyen, and the computational map makes patterns within that record visible through recurring actors and their proximity across articles. Participants recognized the map as one representation of this discourse, while also identifying relationships, forms of relevance, and understandings of community that were not captured by its computational structure. The workshop therefore brought these two forms of knowledge into conversation: patterns derived from the archive and situated interpretations drawn from lived experience.
 
+
 ---
 
 ## Computational Reading + Community Reading
@@ -172,6 +178,7 @@ Computational methods can reveal patterns distributed across thousands of docume
 
 The objective is therefore not to determine which reading is authoritative, but to investigate what becomes visible **between them**.
 
+
 ---
 
 ## About the Data & Computational Analysis
@@ -185,6 +192,7 @@ The computational analysis uses article text and metadata to identify recurring 
 The visualization should therefore be understood as a representation produced through a particular analytical methodology—not as a neutral or exhaustive representation of Longyearbyen or its community. Rather, it makes visible patterns that emerge from the newspaper archive and provides a structure through which those patterns can be explored and interpreted.
 
 Full article texts remain proprietary and are not distributed through this repository.
+
 
 ---
 
@@ -204,6 +212,7 @@ The work developed from Tina Rosado's MFA thesis at Northeastern University and 
 
 **Maarten Loonen** — Arctic researcher, Arctic Centre, University of Groningen. SVALUR project lead and Arctic research context.
 
+
 ---
 
 ## Repository Lineage
@@ -216,6 +225,7 @@ The three repositories document different stages of the project rather than inte
 | 2026 | [rodighiero/svalbard-workshop](https://github.com/rodighiero/svalbard-workshop) | Methodological and visualization development for the workshop |
 | Aug. 2026 | [longyearbyen_workshop_AUG2026](https://github.com/TinaRosado/longyearbyen_workshop_AUG2026) | Interface used for the Artica Svalbard community workshop |
 
+
 ---
 
 ## Selected References
@@ -225,6 +235,7 @@ Latour, B. (2021). Préface. In C. Seurat & T. Tari (Eds.), [*Controverses mode 
 Rodighiero, D., & Daniélou, J. (2023). Weather map: A diachronic visual model for controversy mapping. In F. Armaselu & A. Fickers (Eds.), *Zoomland: Exploring scale in digital history and humanities*. De Gruyter. https://doi.org/10.1515/9783111317779-017
 
 Rosado, T. L. (2025). *An atlas of discourse: Mapping large digital archives through expansive interface design* [Master's thesis, Northeastern University]. https://doi.org/10.17760/D20741600
+
 
 ---
 
