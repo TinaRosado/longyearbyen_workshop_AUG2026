@@ -85,8 +85,8 @@ The workshop moved through three stages: **exploration, inquiry, and reinterpret
 Participants first encountered a simplified black-and-white version of the map showing discourse regions, contours, and cluster labels.
 
 They were invited to read the map spatially, identify subjects they recognized, and mark areas that interested them or connected with their experience of Longyearbyen.
-<img width="5472" height="3648" alt="DSC01210" src="https://github.com/user-attachments/assets/84dc97fc-bba5-4ce7-8576-7385e688eec0" />
 <img width="5472" height="3080" alt="DSC01173" src="https://github.com/user-attachments/assets/e16ef70a-fd5b-4fe2-98ed-b0814df946f1" />
+<img width="5472" height="3648" alt="DSC01210" src="https://github.com/user-attachments/assets/84dc97fc-bba5-4ce7-8576-7385e688eec0" />
 
 
 ### 2. Inquiry
@@ -104,9 +104,9 @@ Using annotations and post-it notes, they identified:
 
 Participants could move between the complete map, discourse regions, clusters, and individual articles to investigate particular areas in greater depth.
 
-<img width="5472" height="3648" alt="DSC01214" src="https://github.com/user-attachments/assets/2a89b645-587e-4b7e-8c14-5eeb0f6a5620" />
-<img width="5472" height="3648" alt="DSC01225" src="https://github.com/user-attachments/assets/772269b4-8664-44b1-ae0c-d4156b9970f7" />
 <img width="5472" height="3648" alt="DSC01236" src="https://github.com/user-attachments/assets/88f2575a-179a-4067-b474-cd08e469b652" />
+<img width="5472" height="3648" alt="DSC01225" src="https://github.com/user-attachments/assets/772269b4-8664-44b1-ae0c-d4156b9970f7" />
+<img width="5472" height="3648" alt="DSC01214" src="https://github.com/user-attachments/assets/2a89b645-587e-4b7e-8c14-5eeb0f6a5620" />
 
 
 ### 3. Reinterpreting the Map
@@ -124,10 +124,11 @@ They could:
 
 The resulting annotations created a second interpretive layer over the computational map: **a community reading of the archive.**
 
-<img width="5472" height="3648" alt="DSC01291" src="https://github.com/user-attachments/assets/59ab3c32-044c-45b8-9f57-375b213786e0" />
-<img width="5472" height="3648" alt="DSC01272" src="https://github.com/user-attachments/assets/3a1f5431-f8fa-4bb7-a696-635a9f959b35" />
-<img width="5472" height="3648" alt="DSC01237" src="https://github.com/user-attachments/assets/49ec9e8d-594a-45da-a889-5dbbb2576869" />
 <img width="5472" height="3648" alt="DSC01257" src="https://github.com/user-attachments/assets/2416b5ce-4ead-4493-b89f-078a106fd832" />
+<img width="5472" height="3648" alt="DSC01237" src="https://github.com/user-attachments/assets/49ec9e8d-594a-45da-a889-5dbbb2576869" />
+<img width="5472" height="3648" alt="DSC01272" src="https://github.com/user-attachments/assets/3a1f5431-f8fa-4bb7-a696-635a9f959b35" />
+<img width="5472" height="3648" alt="DSC01291" src="https://github.com/user-attachments/assets/59ab3c32-044c-45b8-9f57-375b213786e0" />
+
 
 ---
 
