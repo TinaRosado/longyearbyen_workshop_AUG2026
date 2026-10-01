@@ -43,7 +43,7 @@ https://doi.org/10.17760/D20741600
 
 [**rodighiero/svalbard-workshop**](https://github.com/rodighiero/svalbard-workshop)
 
-In preparation for bringing the project to Longyearbyen, a new iteration of the computational and visual approach was developed. This version was used in a pilot workshop facilitated by Dario Rodighiero and Sabina at the Free University of Bozen-Bolzano on July 6-9, 2026.
+In preparation for bringing the project to Longyearbyen, a new iteration of the computational and visual approach was developed. This version was used in a pilot workshop facilitated by Dario Rodighiero and Sabina Rosenbergova at the Free University of Bozen-Bolzano on July 6-9, 2026.
 
 This stage expanded the original thesis prototype and provided the basis for redesigning the visualization around a different purpose: not only navigating the archive, but using the map in conversation with people who know Longyearbyen and its histories.
 
@@ -143,7 +143,7 @@ The workshop exposed productive differences between computational proximity and 
 
 One recurring discussion concerned centrality. The computational map positioned the Governor (*Sysselmesteren*) prominently near the center of the network, reflecting the institution's connections across many areas of newspaper discourse. Participants questioned whether institutional prominence in the newspaper should be interpreted as centrality within community life.
 
-Conversely, opinion and community commentary appeared toward the margins of the computational map. Participants suggested that these conversations could be understood as considerably more central to how the community discusses and negotiates local issues.
+Conversely, opinion and community commentary appeared toward the margins of the computational map. Participants suggested that these conversations could be understood as more central to how the community discusses and negotiates local issues.
 
 Participants also recognized relationships between clusters that appeared computationally distant, questioned the separation of related wildlife topics, identified highly specific historical phenomena such as business-support discussions associated with the COVID-19 period, and reflected on how the archive preserves memories in a place characterized by a highly mobile population.
 
@@ -171,7 +171,7 @@ Community Reading
         ↓
 Annotations / Connections / Questions / Redrawing
         ↓
-Multiple Interpretation
+Multiple Interpretations
 ```
 
 Computational methods can reveal patterns distributed across thousands of documents that would be difficult to perceive through conventional reading alone. Local interpretation, meanwhile, can identify social relationships, historical context, linguistic differences, absences, and forms of meaning that are not encoded in textual similarity.
@@ -187,7 +187,7 @@ The dataset comprises more than **16,700 digital articles from *Svalbardposten*,
 
 *Svalbardposten*, founded in 1948, is the local newspaper of Svalbard and is based in Longyearbyen. Its archive records transformations in community life across subjects including local politics, mining, tourism, research, wildlife, environmental change, infrastructure, culture, and everyday life.
 
-The computational analysis uses article text and metadata to identify recurring actors and relationships across the archive. Articles are positioned and clustered according to these patterns, forming a network in which proximity reflects similarities in the actors that appear across newspaper discourse. Clusters are computationally generated and subsequently labeled using an LLM based on their most prominent keywords.
+The computational analysis uses article text and metadata to identify recurring actors and patterns of association across the archive. Articles are positioned and clustered according to these patterns, forming a network in which proximity reflects similarities in the actors appearing across newspaper discourse. Clusters are computationally generated and subsequently labeled using an LLM based on their most prominent keywords.
 
 The visualization should therefore be understood as a representation produced through a particular analytical methodology—not as a neutral or exhaustive representation of Longyearbyen or its community. Rather, it makes visible patterns that emerge from the newspaper archive and provides a structure through which those patterns can be explored and interpreted.
 
@@ -200,7 +200,7 @@ Full article texts remain proprietary and are not distributed through this repos
 
 The workshop forms part of an ongoing research collaboration connecting information design, digital humanities, computational analysis, and Arctic research.
 
-The work developed from Tina Rosado's MFA thesis at Northeastern University and subsequent collaboration with **Dario Rodighiero**, **Sabina Rosenbergova**, and **Maarten Loonen** through the University of Groningen and the SVALUR research context.
+The work developed from Tina Rosado's MFA thesis at Northeastern University and subsequent collaboration with **Dario Rodighiero**, **Sabina Rosenbergova**, and **Maarten Loonen** through the University of Groningen and the SVALUR research project.
 
 ### Workshop team
 
@@ -208,7 +208,7 @@ The work developed from Tina Rosado's MFA thesis at Northeastern University and 
 
 **Dario Rodighiero** — Assistant Professor of Science and Technology Studies, University of Groningen, Campus Fryslân. Computational methodology, visualization development, research supervision, and workshop co-design/facilitation.
 
-**Sabina Rosenbergova** — Cultural heritage researcher, University of Groningen, Campus Fryslân. Cultural memory and heritage perspective and workshop co-design/facilitation.
+**Sabina Rosenbergova** — Cultural heritage researcher, University of Groningen, Campus Fryslân. Cultural memory and heritage perspective, and workshop co-design/facilitation.
 
 **Maarten Loonen** — Arctic researcher, Arctic Centre, University of Groningen. SVALUR project lead and Arctic research context.
 
@@ -241,7 +241,7 @@ Rosado, T. L. (2025). *An atlas of discourse: Mapping large digital archives thr
 
 ## Acknowledgments
 
-This iteration of the project was made possible through collaboration with Dario Rodighiero, Sabina Rosenbergova, and Maarten Loonen, and with the support of the University of Groningen’s Campus Fryslân and Arctic Centre, the SVALUR research project, and Artica Svalbard, and Svalbardposten. We are especially grateful to Svalbardposten and Chief Editor Line Nagell Ylvisåker for their generosity with their time and for providing access to the newspaper’s digital archive, which made this research possible.
+This iteration of the project was made possible through collaboration with Dario Rodighiero, Sabina Rosenbergova, and Maarten Loonen, and with the support of the University of Groningen’s Campus Fryslân and Arctic Centre, the SVALUR research project, Artica Svalbard, and Svalbardposten. We are especially grateful to Svalbardposten and Chief Editor Line Nagell Ylvisåker for generously sharing their time and providing access to the newspaper's digital archive, which made this research possible.
 
 Special thanks to the residents and visitors who participated in the Longyearbyen workshop and contributed their interpretations, questions, annotations, and knowledge of the community.
 
