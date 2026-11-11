@@ -43,6 +43,64 @@ export default (entities) => {
 
     const allLabels = [...labelListEn, ...labelListNo]
 
+    // Labels never take pointer events. index.js re-parents this layer
+    // straight onto the (eventMode 'static') viewport, and Pixi passes that
+    // mode down to children — so without this, the white halo plates would
+    // swallow hover/click hit-tests and block the articles underneath.
+    labels.eventMode = 'none'
+
+    // Fade-on-approach: when the pointer comes near a label, it fades almost
+    // out so the articles beneath are visible as well as hoverable; it fades
+    // back once the pointer moves away. Purely a display alpha — the Cluster
+    // Labels switch (controls.js) still owns `visible`.
+    const FADE_MARGIN_PX = 14 // screen pixels around a label that count as "near"
+    const FADED_ALPHA = 0.12
+    const FADE_STEP = 0.1 // per frame, ~9 frames for a full fade
+
+    const targets = new Map(allLabels.map((l) => [l, 1]))
+    let animating = false
+
+    const animate = () => {
+        let moving = false
+        targets.forEach((target, label) => {
+            const diff = target - label.alpha
+            if (Math.abs(diff) > 0.001) {
+                label.alpha += Math.sign(diff) * Math.min(Math.abs(diff), FADE_STEP)
+                moving = true
+            }
+        })
+        s.app.render()
+        if (moving) requestAnimationFrame(animate)
+        else animating = false
+    }
+
+    const setTargets = (pointer) => {
+        let changed = false
+        allLabels.forEach((label) => {
+            let target = 1
+            if (pointer && label.visible) {
+                const b = label.getBounds()
+                const near =
+                    pointer.x >= b.minX - FADE_MARGIN_PX &&
+                    pointer.x <= b.maxX + FADE_MARGIN_PX &&
+                    pointer.y >= b.minY - FADE_MARGIN_PX &&
+                    pointer.y <= b.maxY + FADE_MARGIN_PX
+                if (near) target = FADED_ALPHA
+            }
+            if (targets.get(label) !== target) {
+                targets.set(label, target)
+                changed = true
+            }
+        })
+        if (changed && !animating) {
+            animating = true
+            requestAnimationFrame(animate)
+        }
+    }
+
+    s.viewport.on('globalpointermove', (event) => setTargets(event.global))
+    s.app.canvas.addEventListener('pointerleave', () => setTargets(null))
+
     // Recolours every label's main text (not its white halo plate, which is
     // always plain white regardless of this toggle) to follow "Colour by
     // year", exactly like the circles/crosses do: black when off, each
