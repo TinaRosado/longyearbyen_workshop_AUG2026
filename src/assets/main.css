@@ -343,6 +343,59 @@ a:hover {
 	margin-top: 3px;
 }
 
+/* Small mono caption above each Articles key (year gradient, word count). */
+.key-caption {
+	font-family: var(--mono);
+	font-size: 9px;
+	color: var(--muted);
+	margin: 9px 0 0;
+}
+
+.key-caption + .key-spectrum { margin-top: 4px; }
+
+/* Year gradient and word-count keys side by side; the gradient gets the
+   wider column since it carries five year labels. Captions line up along
+   the top; each key is pushed to the column bottom so the year scale and
+   the size labels share a baseline. */
+.key-pair {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	column-gap: 14px;
+}
+
+.key-col {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.key-pair .key-spectrum,
+.key-pair .key-sizes { margin: auto 0 0; padding-top: 4px; }
+
+/* Three years only (start, middle, end), pinned to the bar's ends and centre. */
+.key-pair .spectrum-scale {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Circle-size key — three grey circles on a shared baseline, labels below. */
+.key-sizes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: end;
+	row-gap: 2px;
+	margin: 4px 0 2px;
+	font-family: var(--mono);
+	font-size: 9px;
+	color: var(--muted);
+}
+
+.key-sizes circle {
+	fill: currentColor;
+	fill-opacity: 0.65; /* matches pointGradient.js's CIRCLE_FILL_OPACITY */
+}
+
 /******************************************************************************
  * Station report (article detail, injected by click.js)
 ******************************************************************************/

@@ -12,8 +12,8 @@ import { assignGridLayout, assignCollisionFreeLayout } from './layouts.js'
 
 // ---- Circle-size tuning ------------------------------------------------------
 // Area-based mapping from word count to circle radius. From public/entities.csv
-// (the complete, already-filtered article set): word_count ranges 5–3183,
-// median 341, p95 898 — most articles sit well below the cap, with a long tail
+// (the complete, already-filtered article set): word_count ranges 6–5333,
+// median 349, p95 918 — most articles sit well below the cap, with a long tail
 // of a few very long ones that would otherwise dwarf everything else.
 //
 // The encoding is area, not radius: normalised word count `t` (0–1, after the
